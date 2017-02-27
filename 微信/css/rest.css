@@ -1,0 +1,25 @@
+ul,body,p,h1,h2,h3,h4{
+	margin: 0;
+	padding:0;
+}
+img{
+	border:none;
+	vertical-align:top;
+}
+a{
+	text-decoration: none;
+}
+.clearfix:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+ul{
+		list-style: none;
+		margin:0;
+		padding:0;
+}
+ body{
+ 	font-family: "微软雅黑";
+ 	font-size:14px;
+ }

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.box{
+				width:200px;
+				height:200px;
+				background:red;
+				position:absolute;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+		<script src="MTween.js"></script>
+		<script>
+			var box=document.querySelector('.box');
+//			console.log(Tween.easeIn);
+			 MTween(box,top,1000,800,2,'')
+		</script>
+	</body>
+</html>
