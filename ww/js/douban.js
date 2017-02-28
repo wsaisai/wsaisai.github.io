@@ -52,7 +52,6 @@
 		}
 		onoff = !onoff;
 	})
-
 //生成钟表
 	var Timer_clock = document.querySelector('.Timer_clock');
 	var str = '';
@@ -133,9 +132,6 @@ $('.mask').each(function(index,item){
 		$('.out_title').eq(index).delay(200).animate({'height':'0px','top':'60px','opacity':'0'},800)
 	})
 })
-
-
-
 //生成的小圆点
 var point = document.getElementsByClassName("Timer_point")[0];
 var  pot ='';
@@ -357,7 +353,6 @@ function Handpiano(){
 		var timer1 = null;
 		lis.on("mouseover", function() {
 			var _this = this;
-
 			clearInterval(timer1);
 			clearInterval(timer2);
 			timer1 = setInterval(function() {
@@ -367,7 +362,6 @@ function Handpiano(){
 					clearInterval(timer2);
 				} else {
 					//做运动
-					console.log("做运动");
 					//计算出其余6张图片走了多少距离  目标位置otherW
 					var otherLiTotalW = 0;
 					lis.each(function(index) {
@@ -389,7 +383,6 @@ function Handpiano(){
 					//鼠标移入的图片的width
 					// console.log(otherLiTotalW);
 					var w = total - otherLiTotalW;
-
 					$(_this).width(w);
 				}
 			}, 16)

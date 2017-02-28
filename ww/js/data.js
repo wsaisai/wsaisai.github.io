@@ -12,31 +12,14 @@ var datas = {
 		'title': 'THE ONE',
 		'fa':'fa-snowflake-o'
 	},
-//	{
-//		'id': '3',
-//		'src': 'img/04.jpg',
-//		'title': 'TO BE ',
-//		'fa':'fa-yelp'
-//		
-//	},
 	{
 		'id': '4',
 		'src': 'img/F10.jpg',
 		'title': 'SUNNY ',
-		'fa':'fa-comment-o'
-		
-	},
-//	{
-//		'id': '4',
-//		'src': 'img/F10.jpg',
-//		'title': 'SUNNY ',
-//		'fa':'fa-comment-o'
-//		
-//	},
+		'fa':'fa-comment-o'		
+	}
 	]
-
 }
-
 var Src={
 	file:[
 		{	
@@ -45,8 +28,7 @@ var Src={
 			'title':'三生三世十里桃花',
 			'money':'¥6.93',
 			'pid':'0',
-			'parent':'新星出版社'
-			
+			'parent':'新星出版社'		
 		},
 		{
 			'img':'img/B02.jpg',
@@ -382,9 +364,7 @@ var Src={
 	}
 	]
 		
-}
-var Hanzi ='Books are the quietest and most constant of friends;they are the most accessible and wisest of counselors;and the most patient of teachers. -C.W.Eliot';
-								
+}								
 var Cphoto = {
 	'name':'Design,Planning',
 	photo:[
@@ -468,7 +448,7 @@ var Cphoto = {
 			'img':'img/ctu13.jpg',
 			'font':'LIZIBA',
 			'title':'WEB DESGIN'
-		},
+		}
 	]
 }
 							
