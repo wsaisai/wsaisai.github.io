@@ -306,14 +306,13 @@
 		<script src="js/jquery-3.1.1.js"></script>
 		<script src="js/colordatas.js"></script>
 		<script src="js/sHover.js"></script>
-		<!--<script src="js/sHover.min.js"></script>-->
 		<script src="js/template-native.js"></script>
 		<script src="js/data.js"></script>
 		<script src="js/douban.js"></script>
 		<script src="js/photo.js"></script>
 		<script src="js/Top.js"></script>
 		
-		
+<!--		
 		<script type="text/html" id="tips">
 				<span class="Learn_numbe">为您找到相关的电子书<%=total%>本</span>
 				<div class="Learn_Nnm">
@@ -364,7 +363,7 @@
 			<%}%>
 			<span>下一页</span>
 			<span>尾页</span>
-		</script>
+		</script>-->
 
 		<script>
 			template.helper('filterStr', function(data, length) {
@@ -386,11 +385,11 @@
 			//页码显示的是
 			var pageShow = 5;
 			btnIpt.on('click', function() {
-				var val = searchIpt.val().trim();
-				if(!val) {
-					alert("请填写内容");
-					return;
-				}
+//				var val = searchIpt.val().trim();
+//				if(!val) {
+//					alert("请填写内容");
+//					return;
+//				}
 				var val = searchIpt.val().trim();
 				searchStr = val;
 				prePage = 10;
@@ -419,6 +418,7 @@
 			}
 
 			function fn(data) {
+				console.log(data)
 				$('.Learn_content').hide()
 				$('.Learn_list').show();
 				var Learn_Pages = document.querySelector('.Learn_Pages');
