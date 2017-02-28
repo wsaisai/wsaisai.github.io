@@ -13,28 +13,6 @@
 		opacity: 90
 
 	})
-	
-	
-	
-	//滚动条函数
-//	var Scrotop = document.querySelector('.Scrotop');
-//	var windowW = document.documentElement.clientWidth;
-//	var windowH = document.documentElement.clientHeight;
-//	change()
-//	function change(){
-//		var wTop = document.body.scrollTop ||document.documentElement.scrollTop;
-//
-//	}
-//	window.onscroll = function(){
-//
-//		change()
-//	}
-// window.onresize = function(){//当窗口大小改变的时候触发
-//		windowW = document.documentElement.clientWidth;
-//		windowH = document.documentElement.clientHeight;
-//		change();
-//	}
-
 //导航栏的hover效果
 	function CreateCmack(a) {
 		var str = '';
