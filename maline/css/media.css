@@ -97,24 +97,24 @@
 	}
 }
 
-@media (min-width:20em) {
-	.PM_word {
-		font-size: 2em;
+@media (min-width:320px) {
+	.PM_word  span{
+		font-size: 32px;
 	}
 
 }
 
 @media (min-width:567px) {
-	.PM_word {
-		font-size: 3em;
+	.PM_word span {
+		font-size: 48px;
 		width: 50px;
 	}
 	
 }
 
 @media (min-width:760px) {
-	.PM_word {
-		font-size: 5em;
+	.PM_word span {
+		font-size: 80px;
 		width: 75px;
 	}
 	
@@ -128,13 +128,13 @@
 		font-size:14px;;
 	}
 	.PM_mail p:nth-child(1){
-		font-size:8px;;
+		font-size:8px;
 	}
 }
 
 @media (min-width:920px) {
-	.PM_word {
-		font-size: 8em;
+	.PM_word  span{
+		font-size: 80px;
 		width: 100px;
 	}
 }

@@ -198,7 +198,6 @@
 	height:110px;
 	text-align: center;
 	color: #fff;
-	font-size: 1em;
 	font-weight: bold;
 	font-family: "微软雅黑";
 	position:relative;
@@ -210,6 +209,7 @@
 	width:120px;
 	left:0;
 	top:0;
+	font-size:110px;
 }
 .PM_word .PM_befor,.PM_word .PM_after{
 	position: absolute;
