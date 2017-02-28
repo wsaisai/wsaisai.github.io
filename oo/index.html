@@ -455,7 +455,8 @@
 				Learn_Pages.innerHTML = tipsHtml;
 				//每一行的书的介绍
 				var infoHtml = template('info', data);
-				Learn_list_left.innerHTML = infoHtml;
+				$('.Learn_list_left').html(infoHtml)
+				
 				//生成页码
 				//如果总页码数不超过要显示的页码数，把数组截取了
 				if(pages < pageShow) {
