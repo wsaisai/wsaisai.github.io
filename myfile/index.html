@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/media.css" />
+		<link rel="stylesheet" href="css/rest.css" />
+		<link rel='stylesheet' href="css/photo.css"/>
+		<link rel='stylesheet' href="css/animate.css"/>
+		<link rel="stylesheet" href="css/xiangying.css" />
+	</head>
+
+	<body onselectstart="javascript:return false;">
+		<div id="File">
+			<div id='File_content'class="File_item">
+				<div class="button">
+					<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+				</div>
+				<div class="Timer_wrap">
+					<div class="Timer_clock"></div>
+					<div class="Timer_out"></div>
+					<div class="Timer_cross"></div>
+					<div class="Timer_point"></div>
+					<div class="Timer_number"></div>
+				</div>
+
+			</div>
+			<div class="File_top File_item">
+				<ul class="home_list"></ul>							
+				<!--//豆瓣============================================-->
+			</div>
+		<!--豆瓣读书-->
+		<div class="File_read File_item">
+			<ul class="top_conte">
+				<li class="Learn">
+					<div class="Learn_title">
+						<div class="Learn_title_L">
+							<span>豆瓣</span>
+							<span>读书</span>
+							<span>电影</span>
+							<span>音乐</span>
+							<span>同城</span>
+							<span>小组</span>
+							<span>阅读</span>
+							<span>FM</span>
+							<span>东西</span>
+							<span>市集</span>
+							<span>更多</span>
+						</div>
+						<div class="Learn_title_R">
+							<span>下载豆瓣客户端</span>
+							<span>登陆</span>
+							<span>注册</span>
+						</div>
+					</div>
+					<div id="Learn_head">
+						<h2 class="Learn_h2">豆瓣读书</h2>
+						<div class="Learn_seach">
+							<input type="text" class="Learn_S" placeholder="书名、作者、ISBN" />
+							<p class="Learn_C  fa fa-search"></p>
+						</div>
+					</div>
+					<div class="Learn_nav">
+						<span>分类阅览</span>
+						<span><i class="fa fa-shopping-cart"></i>购书单</span>
+						<span>电子图书</span>
+						<span>纸书</span>
+						<span>2016年度榜单</span>
+						<span>2016读书报告</span>
+					</div>
+					<!--
+                        	作者：offline
+                        	时间：2017-02-17
+                        	描述：小说的搜索界面
+                        -->
+					<div class="Learn_list">
+						<div class="Learn_Pages clearfix">
+						</div>
+						<div class="Learn_list_left">
+
+						</div>
+						<div class="LL_page">
+
+						</div>
+					</div>
+					<!--//learn_content区域-->
+					<div class="Learn_content">
+						<div class="recommend">
+						    <ul class="clearfix" id="sm">
+					            <li>
+					              <img src="img/1.jpg">
+					            </li>
+					            <li>
+					               <img src="img/2.jpg">
+					            </li>
+					            <li>
+					               <img src="img/3.jpg">
+					            </li>
+					            <li>
+					               <img src="img/4.jpg">
+					            </li>
+					            <li>
+					               <img src="img/5.jpg">
+					            </li>
+					            <li>
+					               <img src="img/6.jpg">
+					            </li>
+					            <li>
+					               <img src="img/7.jpg">
+					            </li>
+					        </ul>					
+						</div>
+						<div class="Learn_rank">
+							<div class="Learn_hot">热门推荐</div>
+							<ul class="Learn_Books">
+
+							</ul>
+						</div>
+						<div class="Learn_rank">
+							<div class="Learn_hot">新书上线</div>
+							<ul class="Learn_Books Lb">
+
+							</ul>
+						</div>
+					</div>
+
+					<div class="Learn_rank">
+						<div class="Learn_hot">低价精选</div>
+						<ul class="Learn_Books Learn_sel">
+
+						</ul>
+					</div>
+					<!--//==============底部出版社部分==================================-->
+					<div class="Learn_com">
+						<div class="Learn_com_title">出版社</div>
+						<div class="Learn_Com clearfix">
+							<ul class='press_parent'>
+
+							</ul>
+							<div class="press_cont">
+								<p class="press_title"><span class="fa fa-caret-right"></span>最新出版</p>
+								<ul class="press_right clearfix">
+									<li class="press_books">
+										<img src="img/B01.jpg" class="press_T" />
+										<p class="press_auther">三生三世十里桃花</p>
+									</li>
+									<li class="press_books">
+										<img src="img/B02.jpg" class="press_T" />
+										<p class="press_auther">时间的朋友</p>
+									</li>
+									<li class="press_books">
+										<img src="img/B03.jpg" class="press_T" />
+										<p class="press_auther">未来简史：从智人到智神</p>
+									</li>
+									<li class="press_books">
+										<img src="img/B04.jpg" class="press_T" />
+										<p class="press_auther">寻找前世之旅</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--//底部二维码==================================-->
+					<div class="Learn_foot">
+						<div class="Learn_foot_cont">
+							<ul class="Learn_Cont">
+								<li class='Learn_foot_m'><img src="img/FT01.png" /><span>正版电子书</span></li>
+								<li class='Learn_foot_m'><img src="img/FT02.png" /><span>多平台畅读</span></li>
+								<li class='Learn_foot_m'><img src="img/FT03.png" /><span>海量图书资源</span></li>
+								<li class='Learn_foot_m'><img src="img/FT04.png" /><span>优质阅读体验</span></li>
+							</ul>
+						</div>
+						<div class="L_f_mail clearfix">
+							<div class="L_f_m">
+								<h2>帮助</h2>
+								<p>如何购买图书</p>
+								<p>常见问题</p>
+								<p>支付方式</p>
+							</div>
+							<div class="L_f_m">
+								<h2>平台入驻</h2>
+								<p>机构专区</p>
+								<p>个人作者专区</p>
+							</div>
+							<div class="L_f_m">
+								<h2>投诉与建议</h2>
+								<p>问题反馈</p>
+							</div>
+							<div class="L_f_m LP">
+								<h2>下载客户端</h2>
+								<img src="img/Code.png" />
+							</div>
+						</div>
+						<p class="L_B">如有问题欢迎联系
+							<a href='#' class="r">投诉反馈</a>
+						</p>
+						<div class="L_B">©2017 Baidu
+							<a href="#">使用百度前必读</a> |
+							<a href="#">平台协议</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		<!--这里是File-photo页面-->
+		<div class="File_photo File_item">
+			<div class="P_first">
+				<div class="P_mask ">
+					<div class="P_head clearfix">
+						<div class="P_title">
+							<div class="P_M"></div>
+							<div class="P_M_L">
+								<p>MEMORY DESIGN IS A DESINGN AGENCY SPECLALIAED</p>
+								<p>CREATIVE,DESIGN AND VISLLAL SERVIC</p>
+								<p>GitHub wsaisai 1466389822@qq.com</p>
+							</div>
+						</div>
+						<span class="PM_font">&</span>
+					</div>
+					<div class="PM_mail">
+						<p>DESIGN WHAT YOU EXPECT</p>
+						<p>GRAPHIC + INTERACTIVE DESIGN + USER INTERFACE DESIGN</p>
+					</div>
+					<div class="PM_img">
+						<p class="PM_word">
+							<span class="PM_befor">A</span>
+							<span>A</span>
+							<span class="PM_after">A</span>
+						</p>
+						<p class="PM_word">
+							<span class="PM_befor">M</span>
+							<span>M</span>
+							<span class="PM_after">M</span>
+						</p>
+						<p class="PM_word">
+							<span class="PM_befor">A</span>
+							<span>A</span>
+							<span class="PM_after">A</span>
+						</p>
+						<p class="PM_word">
+							<span class="PM_befor">Z</span>
+							<span>Z</span>
+							<span class="PM_after">Z</span>
+						</p>
+						<p class="PM_word">
+							<span class="PM_befor">I</span>
+							<span>I</span>
+							<span class="PM_after">I</span>
+						</p>
+						<p class="PM_word">
+							<span class="PM_befor">N</span>
+							<span>N</span>
+							<span class="PM_after">N</span>
+						</p>
+						<p class="PM_word">
+							<span class="PM_befor">G</span>
+							<span>G</span>
+							<span class="PM_after">G</span>
+						</p>
+					</div>
+					
+						<ul class="PM_ul">
+							<li class="PMlis"></li>
+							<li class="PMlis"></li>
+							<li class="PMlis"></li>
+							<li class="PMlis"></li>
+							<li class="PMlis"></li>
+						</ul>
+					
+					<div class="arrow">
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="Ph_cont">
+				<div class="PC_head clearfix">
+					<div class="P_btn">
+						<span></span>
+						<span></span>
+					</div>
+				</div>				
+				<!--这里是Ph_title动画的容器-->
+				<div class="Ph_title">
+						
+				</div>			
+				<!--//生成的图片-->
+				<div class="Ph_wrap">
+					
+				</div>
+				
+			</div>
+		</div>
+		<!--<这里是color部分-->		
+<!--左侧菜单栏-->
+		<div id="File_left">
+			<ul id="list_nav">
+
+				<li>
+					<div class="plant_nav"><span class="garden_left">Funny</span> <span class="garden_right">Funny</span></div>
+				</li>
+				<li>
+					<div class="plant_nav"><span class="garden_left">TOP</span> <span class="garden_right">TOP</span></div>
+				</li>
+				<li>
+					<div class="plant_nav"><span class="garden_left">Word</span> <span class="garden_right">Word</span></div>
+				</li>
+				<li>
+					<div class="plant_nav"><span class="garden_left">Photo</span> <span class="garden_right">Photo</span></div>
+				</li>
+			</ul>
+			<div id="Left_foot">
+				<div class="scan"><img src="img/F14.png" class="scan_code" /></div>
+				<p class="scan_title"><span>微信扫一扫</span></p>
+				<p class="scan_phone"><span>15127857033</span></p>
+				<p class="scan_mail"><span>MEMORY@M-STUDIO.CC</span></p>
+				<p class="scan_last"><span>BEHANCE ZGOOL</span></p>
+			</div>
+		</div>
+		</div>
+		<script src="js/jquery-3.1.1.js"></script>
+		<script src="js/colordatas.js"></script>
+		<script src="js/sHover.js"></script>
+		<script src="js/sHover.min.js"></script>
+		<script src="js/template-native.js"></script>
+		<script src="js/data.js"></script>
+		<script src="js/douban.js"></script>
+		<script src="js/photo.js"></script>
+		<script src="js/Top.js"></script>
+
+		<!--//===================================豆瓣读书-->
+		<script type="text/html" id="tips">
+			<span class="Learn_numbe">为您找到相关的电子书<%=total%>本</span>
+			<div class="Learn_Nnm">
+				<span><span class="Lnum_color"><%=currentPage%></span>/
+				<%=pages%>
+				</span>
+				<a href="#" class="fa fa-angle-left"></a>
+				<a href="#" class="fa fa-angle-right"></a>
+			</div>
+
+		</script>
+		<script type="text/html" id="info">
+			<%for(var i=0;i<books.length;i++){%>
+			<% var b = books[i] %>
+			<div class="Learn_Left">
+				<img src="<%=b.images.medium%>" class="LL_img" />
+				<div class="LL_R">
+					<h2><%=b.title%><span class="LL_R_year"> (<%=b.publisher%> <%=b.pubdate%>)</span></h2>
+					<div class="LL_star">
+						<a href="#" class="fa fa-star"></a>
+						<a href="#" class="fa fa-star"></a>
+						<a href="#" class="fa fa-star"></a>
+						<a href="#" class="fa fa-star"></a>
+						<a href="#" class="fa fa-star"></a>
+						<span><%=b.rating.average%></span>
+					</div>
+					<p class="LL_auther">作者
+						<%=b.author[0]%>
+					</p>
+
+					<p class="LL_wrap">
+						<%=filterStr(b.summary,40)%>
+					</p>
+					<p class="LL_sel">¥
+						<%=b.price%>
+					</p>
+					<p class="LL_looks">免费试读</p>
+				</div>
+			</div>
+			<%}%>
+		</script>
+		<script type="text/html" id="pageTemp">
+			<span>首页</span>
+			<span>上一页</span>
+			<%for(var i = 0; i < pageArr.length; i++){%>
+			<a class="<%= classNames('LL_color',pageArr[i] == currentPage) %>" href="javascript:;">
+				<%=pageArr[i]%>
+			</a>
+			<%}%>
+			<span>下一页</span>
+			<span>尾页</span>
+		</script>
+
+		<script>
+			template.helper('filterStr', function(data, length) {
+				return data.length > length ? data.slice(0, length) + '...' : length;
+			})
+			template.helper('classNames', function(data, bl) {
+				return bl ? data : '';
+			})
+			var btnIpt = $('.Learn_C');
+			var searchIpt = $('.Learn_S');
+			//搜索关键字
+			var searchStr = '';
+			//一页显示的条数
+			var prePage = '';
+			//总页数
+			var pages = 10;
+			//当前显示的页码
+			var currentPage = 1;
+			//页码显示的是
+			var pageShow = 5;
+			btnIpt.on('click', function() {
+				var val = searchIpt.val().trim();
+				if(!val) {
+					alert("请填写内容");
+					return;
+				}
+				var val = searchIpt.val().trim();
+				searchStr = val;
+				prePage = 10;
+				//生成script
+				jsonp();
+				$('.LL_page').show();
+				$('.Learn_Pages').show();
+			})
+			$('.Learn_rank li').on('click', function() {
+				$('.LL_page').hide();
+				$('.Learn_Pages').hide();
+				searchStr = $(this).children().eq(1).text();
+				prePage = 1;
+				jsonp();
+			})
+
+			function jsonp() {
+				var script = $("<script><\/script>");
+				var start = (currentPage - 1) * prePage; //当前页数-1 乘上一页的显示条数
+				script.attr(
+					"src",
+					'https://api.douban.com/v2/book/search?callback=fn&q=' + searchStr + "&count=" + prePage + '&start=' + start
+				);
+
+				$("body").append(script);
+			}
+
+			function fn(data) {
+				$('.Learn_content').hide()
+				$('.Learn_list').show();
+				var Learn_Pages = document.querySelector('.Learn_Pages');
+				var Learn_list_left = document.querySelector('.Learn_list_left');
+				//共有多少条
+				pages = Math.ceil(data.total / prePage);
+				var tipsHtml = template("tips", {
+					total: data.total,
+					pages: pages,
+					currentPage: currentPage
+				});
+				Learn_Pages.innerHTML = tipsHtml;
+				//每一行的书的介绍
+				var infoHtml = template('info', data);
+				Learn_list_left.innerHTML = infoHtml;
+				//生成页码
+				//如果总页码数不超过要显示的页码数，把数组截取了
+				if(pages < pageShow) {
+					arr.length = pages
+				}
+				renderPages();
+			}
+			//先搞定分页
+			var arr = [1, 2, 3, 4, 5];
+			var len = arr.length;
+
+			function renderPages() {
+				var LL_page = document.querySelector('.LL_page');
+				var pageHtml = template('pageTemp', {
+					pageArr: arr,
+					currentPage: currentPage
+				})
+				$('.LL_page').html(pageHtml)
+			}
+			//点击页码
+			$('.LL_page').on('click', 'a', function() {
+				//点击生成页码，然后重新熏染
+				var pageIndex = $(this).text().trim();
+				currentPage = pageIndex; //记录页码
+				createPage();
+				jsonp();
+			})
+
+			function createPage() {
+				if(currentPage > 2 && pages - currentPage >= 2) {
+					for(var i = 0; i < len; i++) {
+						arr[i] = currentPage - (2 - i);
+					}
+				}
+				//最后两个数 总数-pageIndex < 2 
+				if(pages - currentPage < 2) {
+					arr.length = 0;
+					for(var i = pages - len + 1; i <= pages; i++) {
+						arr.push(i);
+					}
+				}
+				renderPages();
+			}
+			$(".LL_page").on("click", "span", function(ev) {
+					var index = $(this).index(".LL_page span");
+					if(index === 0) { //首页			
+						currentPage = 1;
+						arr = [1, 2, 3, 4, 5]
+						createPage();
+					} else if(index === 3) { //尾页
+						currentPage = pages;
+						createPage();
+					} else if(index === 1) { //上一页
+						if(currentPage === 1) {
+							return;
+						}
+						currentPage--;
+						createPage();
+					} else if(index === 2) { //下一页
+						if(currentPage === pages) {
+							return;
+						}
+						currentPage++;
+						createPage();
+					}
+					//请求数据
+					jsonp();
+				})
+				.on("mousedown", function(ev) {
+					ev.preventDefault();
+				})
+				//主页面和搜索页面的交替
+			$('.Learn_h2').on('click', function() {
+				$('.Learn_content').show()
+				$('.Learn_list').hide();
+			})
+		</script>
+	</body>
+
+</html>

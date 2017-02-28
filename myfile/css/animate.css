@@ -1,0 +1,5 @@
+@keyframes Chair {
+	to {
+		stroke-dashoffset: 500;
+	}
+}
