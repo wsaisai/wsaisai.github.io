@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel='stylesheet' href="css/photo.css" />
+		<script>
+			var dpr = 1 / window.devicePixelRatio;
+			document.write('<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=' + dpr + ',minimum-scale=' + dpr + ',maximum-scale=' + dpr + '" />')
+			var fz = document.documentElement.clientWidth / 37.5;
+			document.getElementsByTagName('html')[0].style.fontSize = fz + 'px';
+		</script>
+		
+	</head>
+
+	<body>
+
+		<head id='head'>
+			<div class='title'></div>
+			<h2 class='mail'>天气预报</h2>
+		</head>
+		<section id='content'>
+			<ul class="item">
+				<li class="page">
+					<p><!--<span>擅长技能</span>--></p>
+					<p><!--<span>求职意向</span>--></p>
+					<div class = "PI">
+						<span>Js</span>
+						<span>ps</span>
+						<span>Css</span>
+						<span>Html</span>
+					</div>
+					<div class='job'>
+						<div>职位：前端工程师</div>
+						<div>薪资：6k-8k</div>
+					</div>
+					<div class= 'button'></div>
+				</li>
+				<p class= 'dianji'></p>
+			</ul>
+		</section>
+		
+		<script src="js/jquery-3.1.1.js"></script>
+		<script src="js/phone.js" ></script>
+
+	</body>
+
+</html>
