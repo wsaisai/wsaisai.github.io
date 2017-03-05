@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			.box{
+				width:100px;
+				height:100px;
+				background:red;
+				position:absolute;
+			}
+		</style>
+	</head>
+	<body>
+		<div class='box'></div>
+		<script src="js/MTween.js" ></script>
+		<script>
+			function Fn(){
+				this.box = document.querySelector('.box')
+				this.init();
+			}
+			Fn.prototype={
+				init(){
+					var _this = this;
+					document.onclick=function(){
+						MTween(_this.box,'left',1900,700,"elasticIn",_this.move)
+					}
+					this.move=this.move.bind(this)	
+				},
+				move(){
+					this.box.style.left=0;
+				}
+			}
+
+		
+			var p = new Fn()
+		</script>
+	</body>
+</html>

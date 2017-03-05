@@ -1,0 +1,106 @@
+/*第一屏人物的抖动*/
+@-webkit-keyframes Fname{
+	0%{
+		top:12.9rem;
+		left:8.9rem;
+	}
+	100%{
+		top:13rem;
+		left:9.05rem;
+	}
+}
+/*第一屏开场动画*/
+@-webkit-keyframes P{
+	0%{
+		-webkit-transform:rotate(3deg);
+	}
+	100%{
+		-webkit-transform:rotate(-2deg);
+	}
+}
+/*每屏下面三角的运动*/
+@-webkit-keyframes Button{
+	0{
+		top:55rem;
+	}
+	100%{
+		top:53rem;
+	}
+}
+/*第三屏中的拳头部分*/
+@-webkit-keyframes Gy{
+	0%{
+		width:5rem;
+		height:5rem;
+		left:5rem;
+		top:26rem;
+	}
+	100%{
+	width:4rem;
+	height:4rem;
+	left:6rem;
+	top:27rem;
+	}
+}
+/*//拳头上面的线*/
+@-webkit-keyframes Th{
+	0%{
+		left:1.9rem;
+	}
+	100%{
+		left:2rem
+	}
+}
+/*//拳头后面的人影*/
+@-webkit-keyframes Fup{
+	0%{
+		/*top:23rem;*/
+		-webkit-transform:translate(0rem);
+	}
+	100%{
+		width:21rem;
+		height:21rem;
+		top:21rem;
+		-webkit-transform:translate(40rem);
+	}
+}
+/*//第五屏动画*/
+.Fiv_sun{
+	-webkit-animation: Fi 0.1s linear infinite;
+}
+@-webkit-keyframes Fi{
+	0%{
+		left:-7.9rem;
+	}
+	100%{
+		left:-8rem
+	}
+}
+/*//第七屏动画*/
+@-webkit-keyframes sfiger{
+	0%{
+		top:37.1rem;
+	}
+	100%{
+		top:36.9rem;
+	}
+}
+@-webkit-keyframes Shand{
+	0%{
+		-webkit-transform:translate(3rem);
+		-webkit-transform:rotateZ(1deg);
+	}
+	100%{
+	-webkit-transform:translate(13rem);
+		-webkit-transform:rotateZ(-1deg);
+	}
+}
+/*//碟片的旋转*/
+@-webkit-keyframes Msecle{
+	0%{
+		-webkit-transform: rotateZ(360deg);
+	}
+	100%{
+		-webkit-transform: rotateZ(0deg);
+	}
+}

@@ -1,0 +1,700 @@
+#section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+.content{
+	position:absolute;
+	width:100%;
+	/*height:56.8rem;*/
+}
+.page{
+	position:relative;
+	background:url(../img/f64.png);
+	width:100%;
+	height:56.8rem;
+	overflow: hidden;
+	transform-style: preserve-3d;
+	perspective: 100rem;
+}
+.first{
+	position:relative;
+	/*display:none;*/
+}
+.Secend{
+	/*display:none;*/
+}
+.Three{
+	/*display:none;*/
+}
+.Four{
+	/*display:none;*/
+}
+.Five{
+	/*display:none;*/
+}
+.Six{
+	/*display:none;*/
+}
+.Seven{
+	background:url(../img/f35.png) no-repeat -0.3rem -0.3rem;
+	background-size:33rem 57.5rem;
+	/*display:none;*/
+}
+.first_bg{
+	position:absolute;
+	width:32rem;
+	height:56.8rem;
+	background:url(../img/f64.png) no-repeat;
+	background-size: 32rem 56.8rem;
+	left:0;
+	top:0rem;
+}
+.F_line{
+	position:absolute;
+	width:17.7rem;
+	height:28.4rem;
+	left:7.2rem;
+	/*top:9.5rem;*/
+	top:-29rem;
+	
+}
+.F_mail{
+	position:absolute;
+	width:25rem;
+	height:4.8rem;
+	background:#fff600;
+	left:3.2rem;
+	top:41.5rem;
+	overflow: hidden;
+}
+.F_title{
+	position:absolute;
+	width:28.5rem;
+	height:14.9rem;
+	left:2.2rem;
+	top:3.2rem;
+	-webkit-transform:translateZ(12rem);
+	-webkit-transition:0.3s;
+	opacity:0;
+}
+.F_name{
+	position:absolute;
+	width:15.2rem;
+	height:24.8rem;
+	left:9rem;
+	top:12.9rem;
+	-webkit-animation: Fname 0.1s ease-in infinite;
+}
+.F_fa li{
+	position:absolute;
+	width:15.2rem;
+	height:24.8rem;
+	background:url(../img/f02.png) no-repeat;
+	background-size:15.2rem 24.8rem;
+	top:12.9rem;
+	opacity:0.3;
+}
+.F_c li{
+	position:absolute;
+	width:15.2rem;
+	height:24.8rem;
+	background:url(../img/f02.png) no-repeat;
+	background-size:15.2rem 24.8rem;
+	top:12.9rem;
+	left:9rem;
+	opacity:0.3;
+	-webkit-transition:0.3s;
+}
+.F_fa_l{
+	left:-15.3rem;
+}
+.F_fa_r{
+	left:32rem;
+}
+.F_fa_R{
+	left:32rem;
+	opacity:1;
+}
+.F{
+	position:absolute;
+	width:15.2rem;
+	height:24.8rem;
+	left:9rem;
+	top:12.9rem;
+	-webkit-animation: P 0.1s ease-in infinite;
+}
+
+.F_button li{
+	position:absolute;
+	/*width:5.6rem;
+	height:5.6rem;*/
+	height:0;
+	width:0;
+	opacity:0;
+	border:0.2rem solid #0d1745;
+	line-height:5.6rem;
+	/*font-size:2.2rem;*/
+	font-size:0;
+	border-radius: 50%;
+	background:#fff;
+	text-align: center;
+	font-weight:bold;
+}
+.F_button li:nth-child(1){
+	/*left:0.7rem;
+	top:20.2rem;*/
+	left:3.5rem;
+	top:23rem;
+
+}
+.F_button li:nth-child(2){
+	/*left:25.9rem;
+	top:20.2rem;*/
+	left:28.7rem;
+	top:23rem;
+}
+.F_button li:nth-child(3){
+	/*left:0.7rem;
+	top:31rem;*/
+	left:3.5rem;
+	top:33.8rem;
+}
+.F_button li:nth-child(4){
+	/*left:25.9rem;
+	top:31rem;*/
+	left:28.7rem;
+	top:33.8rem;
+}
+.F_mai{
+	position:absolute;
+	left:1.5rem;
+	/*top:0.8rem;*/
+	top:-2rem;
+	text-align: center;
+	font-size:1.6rem;
+	color:#010100;
+
+}
+.F_mailss{
+	position:absolute;
+	left:5rem;
+	/*top:3rem;*/
+	top:-2rem;
+	font-size:1.2rem;
+	color:#554900;
+
+}
+.button{
+	position:absolute;
+	-webkit-transform:rotate(90deg);
+	left:15.3rem;
+	top:55rem;
+	-webkit-animation: Button 1s linear infinite;
+}
+.button p{
+	width:1.4rem;
+	height:0.5rem;
+	background:#fff;
+	margin:0 auto;
+}
+.button p:nth-child(1){
+	-webkit-transform:rotate(-45deg)
+}
+.button p:nth-child(2){
+	-webkit-transform:rotate(45deg)
+}
+/*这里是第二屏*/
+.Se_bg{
+	position:absolute;
+	left:8.6rem;
+	/*top:6.4rem;*/
+	top:-36rem;
+	width:15.6rem;
+	height:35rem;
+	border:0.2rem solid #232326;
+	background:#fff;
+}
+.Se_word{
+	position:absolute;
+	left:3rem;
+	/*top:4.1rem;*/
+	top:-20rem;
+	width:26.5rem;
+	height:17.4rem;
+}
+.Se_color{
+	position:absolute;
+	left:8.6rem;
+	/*top:14rem;*/
+	
+	top:20rem;
+	display:none;
+	width:9rem;
+	height:9rem;
+}
+.Se_sun{
+	position:absolute;
+	width:16.7rem;
+	height:17.7rem;
+	left:1.4rem;
+	top:22.1rem;
+	/*opacity:0;*/
+	display:none;
+}
+.Se_hand{
+	position:absolute;
+	width:4rem;
+	height:4rem;
+	/*left:5.4rem;*/
+	left:5rem;
+	top:30.3rem;
+	display:none;
+}
+.Se_mother{
+	position:absolute;
+	width:21rem;
+	height:29rem;
+	/*left:9rem;*/
+	left:33rem;
+	top:13rem;
+}
+.Se_mails{
+	position:absolute;
+	left:0;
+	left:-24rem;
+	top:43.3rem;
+	width:23.2rem;
+	height:3rem;
+	background:#0d1644;
+	line-height:3rem;
+	color:#fff;
+	font-size:1.2rem;
+	text-align: center;
+}
+.Se_da{
+	position:absolute;
+	width:9.7rem;
+	height:4.3rem;
+	/*left:20rem;*/
+	left:33rem;
+	top:22rem;
+	-webkit-transform:rotateZ(14deg)
+}
+/*这是第三屏*/
+.Th_bg{
+	position:absolute;
+	width:14.5rem;
+	height:24.2rem;
+	border:0.2rem solid #1b203e;
+	background:#fff;
+	left:10.9rem;
+	top:15.7rem;
+	
+}
+.Th_name{
+	position:absolute;
+	left:2rem;
+	/*top:1.3rem;*/
+	width:26.8rem;
+	height:19.8rem;
+	top:-22rem;
+}
+.Th_sister{
+	position:absolute;
+	width:26rem;
+	height:29rem;
+	top:13.6rem;
+	/*left:4rem;*/
+	left:20rem;
+}
+.Th_mother{
+	position:absolute;
+	width:27rem;
+	height:26rem;
+	/*left:-6rem;*/
+	left:-30rem;
+	top:16rem;
+}
+.Th_git{
+	position:absolute;
+	width:4rem;
+	height:4rem;
+	border-radius: 50%;
+	left:6rem;
+	top:27rem;
+	opacity:0;
+	-webkit-animation:Gy 0.2s linear infinite;
+}
+
+.Th_point{
+	position:absolute;
+	width:2rem;
+	height:3rem;
+	left:20rem;
+	top:20rem;
+	display:none;
+}
+.Th_foot{
+	position:absolute;
+	width:6rem;
+	height:2rem;
+	top:40rem;
+	/*left:17rem;*/
+	left:-7rem;
+}
+.Th_last{
+	position:absolute;
+	top:40rem;
+	left:5rem;
+	left:-10rem;
+	width:8rem;
+	height:2rem;
+}
+.Th_mails{
+	position:absolute;
+	width:21rem;
+	height:3rem;
+	line-height:3rem;
+	background:#0d1744;
+	text-align:center;
+	top:43.3rem;
+	left:0;
+	left:-22rem;
+	font-size:1.2rem;
+	color:#fefefe;
+}
+.Th_tr{
+	position:absolute;
+	width:6.2rem;
+	height:4.2rem;
+	left:2rem;
+	top:22rem;
+	-webkit-animation: Th 0.08s linear infinite;
+	display:none;
+}
+/*第四屏*/
+.For_bg{
+	position:absolute;
+	left:7rem;
+	/*top:27.3rem;*/
+	top:-17rem;
+	width:16.4rem;
+	height:16.4rem;
+	border:0.2rem solid #32312c;
+	background:#fff;
+	
+}
+.For_mother{
+	position:absolute;
+	top:25rem;
+	/*left:-5rem;*/
+	left:-20rem;
+	width:20rem;
+	height:20rem;
+}
+.For_sun{
+	position:absolute;
+	top:29rem;
+	/*left:10rem;*/
+	left:-15rem;
+	
+	width:14rem;
+	height:14rem;
+}
+.For_up{
+	position:absolute;
+
+	top:21rem;
+	left:10rem;
+	width:21rem;
+	height:21rem;
+	display:none;
+	-webkit-animation:Fup 2s linear infinite ;
+}
+.For_point{
+	position:absolute;
+	top:43rem;
+	/*left:18rem;*/
+	left:-19rem;
+	width:5rem;
+	height:2rem;
+}
+.For_B{
+	position:absolute;
+	width:12rem;
+	height:6rem;
+	top:25rem;
+	/*left:2rem;*/
+	left:-20rem;
+	-webkit-transform:rotateZ(-30deg)
+}
+.For_title{
+	position:absolute;
+	left:3rem;
+	/*top:6rem;*/
+	top:-22rem;
+	width:27.4rem;
+	height:21rem;
+	
+}
+.For_mails{
+	position:absolute;
+	width:27rem;
+	height:3rem;
+	line-height:3rem;
+	font-size:1.2rem;
+	color:#fff;
+	text-indent:0.4rem;
+	background:#0d1744;
+	top:48rem;
+	/*left:0;*/
+	left:-27rem;
+}
+/*//第五屏*/
+.Fi_bg{
+	position:absolute;
+	left:6rem;
+	/*top:17rem;*/
+	top:-19rem;
+	width:18.6rem;
+	height:18.6rem;
+	border:0.2rem solid #222747;
+	background:#fff;
+}
+.Fi_mother{
+	position:absolute;
+	width:40rem;
+	height:30rem;
+	top:11rem;
+	/*left:-2rem;*/
+	left:43rem;
+}
+.Fi_sun{
+	position:absolute;
+	width:24rem;
+	height:32rem;
+	/*left:-8rem;*/
+	left:42rem;
+	top:5rem;
+	-webkit-animation: Fi 0.1s linear infinite;
+}
+
+.Fi_like{
+	position:absolute;
+	width:12rem;
+	height:8rem;
+	top:23rem;
+	/*left:7.4rem;*/
+	left:34rem;
+}
+.Fi_line{
+	position:absolute;
+	width:11rem;
+	height:8rem;
+	top:17rem;
+	left:-4rem;
+	display:none;
+}
+.Fi_word{
+	position:absolute;
+	width:13rem;
+	height:6rem;
+	-webkit-transform: rotateZ(45deg);
+	left:20rem;
+	top:23rem;
+	opacity:0;
+}
+.Fi_icon{
+	position:absolute;
+	width:20rem;
+	height:14rem;
+	top:14rem;
+	/*left:2rem;*/
+	left:33rem;
+}
+.Fi_title{
+	position:absolute;
+	width:24rem;
+	height:16rem;
+	left:4rem;
+	/*top:4rem;*/
+	top:-18rem;
+}
+.Fi_mails{
+	position:absolute;
+	line-height:3rem;
+	width:28rem;
+	background:#0d1644;
+	color:#fff;
+	font-size:1.2rem;
+	text-indent:1rem;
+	top:43.2rem;
+	left:-29rem;
+}
+/*第六屏*/
+.Six_bg{
+	position:absolute;
+	left:9.4rem;
+	/*top:10.4rem;*/
+	top:-38rem;
+	width:12.2rem;
+	height:36.7rem;
+	border:0.2rem solid #121734;
+	background:#fff;
+
+}
+.Six_air{
+	position:absolute;
+	width:18.8rem;
+	height:13rem;
+	top:35rem;
+	left:6rem;
+	display:none;
+}
+.Six_cloud{
+	position:absolute;
+	top:41rem;
+	left:0.5rem;
+	height:7rem;
+	width:31rem;
+	display:none;
+}
+.Six_mother{
+	position:absolute;
+	/*top:39.3rem;*/
+	top:58rem;
+	left:9rem;
+	width:17rem;
+	height:8.4rem;
+}
+.Six_B{
+	position:absolute;
+	top:36rem;
+	left:2rem;
+	-webkit-transform:rotateZ(-30deg);
+	width:13.1rem;
+	height:7rem;
+	opacity:0;
+}
+.Six_title{
+	position:absolute;
+	left:3rem;
+	/*top:9rem;*/
+	width:29rem;
+	height:25rem;
+	top:58rem;
+}
+.Six_star{
+	position:absolute;
+	width:2.5rem;
+	height:3.5rem;
+	left:20rem;
+	top:6rem;
+	display: none;
+}
+.Six_name{
+	position:absolute;
+	top:0;
+	left:23rem;
+	width:7rem;
+	height:7rem;	
+	display: none;
+}
+.Six_word{
+	position:absolute;
+	left:24.8rem;
+	top:2rem;
+	font-size:1.8rem;
+	color:#000;
+	font-weight: bold;
+	display: none;
+}
+.Six_mails{
+	position:absolute;
+	background:#0d1744;
+	line-height:3rem;
+	width:23rem;
+	font-size:1.2rem;
+	color:#fff;
+	text-indent:1rem;
+	left:-24rem;
+	top:2rem;
+}
+/*//第七屏*/
+.Sev_bg{
+	position:absolute;
+	width:100%;
+	height:3rem;
+	background:#000;
+	left:0;
+	top:19.4rem;
+}
+.Sev_word{
+	position:absolute;
+	left:-20rem;
+	color:#fff;
+	font-size:1.4rem;
+	line-height:3rem;
+}
+.Sev_sister{
+	position:absolute;
+	width:12rem;
+	height:17rem;
+	/*left:17rem;*/
+	left:33rem;
+	top:13rem;
+	-webkit-transform:rotate(-10deg);
+}
+.Sev_color{
+	position:absolute;
+	top:-30rem;
+	width:100%;
+	height:29rem;
+}
+.Sev_title{
+	position:absolute;
+	width:18rem;
+	height:12rem;
+	top:35rem;
+	left:8rem;
+	display:none;
+	-webkit-animation: Shand 0.1s linear infinite;
+}
+.Sev_hand{
+	position:absolute;
+	width:9rem;
+	height:5rem;
+	top:37rem;
+	/*left:24rem;*/
+	left:33rem;
+	-webkit-animation:sfiger 0.1s linear infinite;
+}
+.Ei_bg{
+	position:absolute;
+	left:2rem;
+	top:20rem;
+	width:27rem;
+	height:23rem;
+	display:none;
+}
+.Ei_title{
+	position:absolute;
+	left:6rem;
+	top:4rem;
+	width:20rem;
+	height:10rem;
+	display:none;
+}
+.muscle{
+	position:absolute;
+	z-index:12;
+	width:3.75rem;
+	height:3.75rem;
+	left:27rem;
+	top:2rem;
+	-webkit-animation: Msecle 3s linear infinite;
+}
