@@ -1,0 +1,173 @@
+ <!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel ='stylesheet'href="dialog/demo.css" />
+		<link rel="stylesheet" href="css/rest.css" />
+		<link rel="stylesheet" href="css/tool.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+
+	</head>
+
+	<body onselectstart="javascript:return false;">
+		<div id="weiyun">
+			<header id="head">
+				<h1>微云</h1>
+				<div id="title_tips"></div>
+				<div class="wifi">
+					<p></p>
+					<input type="text" id="seach" placeholder="请输入文件名" />
+				</div>
+				<!--<div id="add">添加</div>-->
+				<div id="rank">
+					<div class="rank_left">
+						<div class="sort_cross fa fa-bars"></div>
+						<div class="sort_plane fa fa-th-large"></div>
+					</div>
+					<!--<div class="rank_right">
+						<div class="sort_time"></div>
+						<div class="sort_big"></div>
+					</div>-->
+				</div>
+
+			</header>
+			<!--
+        	作者：offline
+        	时间：2017-01-31
+        	描述：content
+        -->
+			<section id="content">
+				<div id="content_left">
+					<h2>
+        			<a href="#"class="head_img"></a>
+        		</h2>
+					<div id="MVP">
+						<a href='#' class="mvp">开通会员</a>
+					</div>
+					<div>
+						<a href="#" class="the_rest">最近</a>
+					</div>
+					<div id="the_file">
+						<p>文件</p>
+						<ul class="the_file_ul">
+							<li>
+								<a href="#">全部</a>
+							</li>
+							<li>
+								<a href="#">文档</a>
+							</li>
+							<li>
+								<a href="#">图片</a>
+							</li>
+							<li>
+								<a href="#">视频</a>
+							</li>
+							<li>
+								<a href="#">笔记</a>
+							</li>
+							<li>
+								<a href="#">音乐</a>
+							</li>
+						</ul>
+					</div>
+					<div id="the_photo">照片</div>
+					<div id="the_time">
+						<a href="#">时间</a>
+					</div>
+					<div id="my">我的</div>
+					<div id="the_ske">
+						<a href="#">剪切板</a>
+					</div>
+				</div>
+				<!--=============content的right部分====================?-->
+				<div id="content_right">
+					<div class="nav">
+						<a href='#' class="move"><i></i><span>移动到</span></a>
+						<a href='#' class="agin"><i></i><span>重命名</span></a>
+						<a href='#' class="Delete"><i></i><span>删除</span></a>
+						<a href='#' class="New"><i></i><span>新建文件夹</span></a>
+						<a href='#' class="refresh"><i></i></a>
+					</div>
+					<div id="tree_menu">
+						<!--<ul>
+        				<li>
+        					<h2 class="h2_active">微云</h2>
+        					<ul>
+        						<li>
+        							<h2 class="h2_active">火影</h2>
+        							<ul>
+        								<li>鸣人</li>
+        								<li>佐助</li>
+        								<li>小李</li>
+        							</ul>
+        						</li>
+        						<li>
+        							<h2 class="h2_active">海贼王</h2>
+        							<ul>
+        								<li>乔巴</li>
+        								<li>索隆</li>
+        								<li>
+        									<h2 class="h2_active">草帽团</h2>
+        									<ul>
+        										<li>梅里号</li>
+        									</ul>
+        								</li>
+        							</ul>
+        						</li>
+        					</ul>
+        				</li>
+        			</ul>-->
+					</div>
+					<div id="content_wrap">
+						<div id="wrap_nav">
+							<div id="checkAll"></div>
+							<ul id="nav_bread">
+								<!--<li><a href="#">微云</a><i class="ico_right"></i></li>
+        					<li><a href="#">火影</a><i class="ico_right"></i></li>
+        					<li><span>鸣人</span></li>-->
+							</ul>
+						</div>
+
+						<!--这里是文件区域？-->
+						<div id="file_content">
+							<div id="File"></div>
+							<!--<div class="file_item">
+								<span class="check"></span>
+								<div class="file_img"></div>
+								<p class="file_title_box">
+									<span class="file_title">微云</span>
+									<span class="file_edtor">
+        							<input class="edtor"type ="text" />
+        						</span>
+								</p>
+							</div>-->
+							<div id="file_cross">
+								<ul>
+									<li class="cross_file">
+										<i class="cross_img"></i>
+										<span class="cross_name">新建文件夹</span>
+										<p class="cross_data">2016-01-01 21:11</p>
+										<span class="cross_type">文件夹</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						
+						<!--<div class="bg"></div>-->
+					</div>
+				</div>
+
+			</section>
+		</div>
+		<script src="dialog/dialog.js"></script>
+		<script src="js/data.js"></script>
+		<script src="js/handle.js"></script>
+		<script src="js/jquery-3.1.1.js"></script>
+		<script src="js/tool.js"></script>
+		<script src="js/webvyun.js"></script>
+	</body>
+
+</html>
