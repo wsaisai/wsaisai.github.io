@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				margin:0;
+				overflow: hidden;
+			}
+			.line{
+				position: absolute;
+				height:2px;
+				background-color: black;
+				/*transform-origin: 0 1px;*/
+				transform-origin: 0px center;
+				
+			}
+			@keyframes move{
+				0%{
+					transform: rotate(0deg);
+				}
+				100%{
+					transform: rotate(720deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			function CreatLine(keyNum){
+				this.disX=null;
+				this.disY=null;
+				this.divA=null;
+				this.a=null;
+				this.b=null;
+				this.c=null;
+				this.init();
+			}
+			CreatLine.prototype={
+				constructor:CreatLine,//重新指向实例
+				init(){
+//					var _this=this;
+//					document.onmousedown=function(e){
+//						_this.downFn(e);
+//					};
+					document.onmousedown=this.downFn.bind(this);
+				},
+				downFn(e){
+//					var _this=this;
+					//置为null
+					this.divA=null;
+					//随机生成0~255之间的数，用作rgba（）调背景颜色
+					a=Math.floor(Math.random()*255);
+					b=Math.floor(Math.random()*133);
+					c=Math.floor(Math.random()*255);
+					disX=e.clientX;
+					disY=e.clientY;
+//					document.onmousemove=function(e){
+//						_this.moveFn(e);
+//					};
+					document.onmousemove=this.moveFn.bind(this);
+					document.onmouseup=this.upFn;
+					e.preventDefault();
+				},
+				moveFn(e){
+					//鼠标移动距离小于5px return
+					if( Math.abs( e.clientX - disX ) < 5 || Math.abs( e.clientY - disY ) < 5 ){
+						return;
+					}
+					if(!this.divA){
+						this.divA=document.createElement("div");
+						this.divA.className="line";
+						this.divA.style.left=disX+"px";
+						this.divA.style.top=disY+"px";
+						document.body.appendChild(this.divA);
+						//添加自定义属性 记录left和top值
+						this.divA.disX=disX;
+						this.divA.disY=disY;
+					}
+					var difX=e.clientX-disX;
+					var difY=e.clientY-disY;
+					var divW=Math.floor(Math.sqrt(Math.pow(difX,2)+Math.pow(difY,2)));
+					var deg=360*Math.atan(difY/difX)/(2*Math.PI);
+					if(e.clientX<disX){
+						deg=deg+180;
+					}
+					//自定义属性记录当前角度;
+					this.divA._deg=deg;
+					this.divA.style.width=divW+"px";
+					this.divA.style.backgroundColor="rgba("+a+","+b+","+c+",1)";
+					this.divA.style.transform="rotate("+deg+"deg)";
+				},
+				upFn(){
+					document.onmousemove=null;
+					document.onmouseup=null;
+				},
+				//-------------添加运动事件---------------
+				sports(keyNum){
+					var divAs=document.getElementsByTagName("div");
+					var lineArr=Array.from(divAs);
+					lineArr.forEach(function(item){
+						item.style.transition="1.5s";
+						item.style.animation="";
+					})
+					if(keyNum==38){
+						lineArr.forEach(function(item){
+							item.style.transformOrigin=" center center";
+						})
+						var time=new Date(),
+							t=null,
+							timer=null;
+						timer=setInterval(function(){
+							//运动时间S
+							t=(new Date()-time)/1000;
+							lineArr.forEach(function(item){
+								var deg=item._deg;
+								item.style.transform="rotate("+(360*Math.random()+deg)+"deg)";
+							})
+							if(t>5){
+								clearInterval(timer);
+								lineArr.forEach(function(item){
+									var deg=item._deg;
+									item.style.transformOrigin=" 0px center";
+									item.style.transform="rotate("+deg+"deg)";
+								});
+							}
+						},1500)
+					}
+					if(keyNum==40){
+						lineArr.forEach(function(item){
+							item.style.animation="move 3s ease-in 3";
+							item.style.animationFillModeode="backwards";
+						})
+					}
+				}
+			}
+			var t1=new CreatLine();
+//-----------------------------添加键盘事件（上、下按键）------------------------------------------------
+			document.onkeydown=function(e){
+				var divAs=document.getElementsByTagName("div");
+				if(!divAs.length){
+					throw new Error("页面没有内容");
+					return;
+				}
+				var lineArr=Array.from(divAs);
+				var keyNum=e.keyCode;
+				t1.sports(keyNum)
+			}
+//			var windowX=document.documentElement.clientWidth;
+//			var windowY=document.documentElement.clientHeight;
+		</script>
+	</body>
+</html>
