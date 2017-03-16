@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<div id="box">
+			<div class="o"></div>
+		</div>
+		<script src="js/jquery-3.1.1.js">
+		</script>
+		<script>
+			//		var jo=$('#box').find('.o');
+			//			console.log(jo.end())
+			//			console.log($('#box').find('.o').end())
+			//			function clone(obj){
+			//				if(typeof obj==='object' && typeof obj !=='null'){
+			//					var o = Object.prototype.toString.call(obj).slice(8,-1)==='Array'?[]:{};
+			//					for(var k in obj){
+			//						if(typeof obj[k]==='object' &&typeof obj[k]!=='null'){
+			//							o[k]=clone(obj[k])
+			//						}else{
+			//							o[k]=obj[k]
+			//						}
+			//					}
+			//				}else{
+			//					return obj;
+			//				}
+			//				return o;
+			//			}
+
+			var j = [];
+
+			function paseint(str) {
+				if(typeof str !== 'number'){
+					alert('您输入的不是数字');
+					return;
+				}
+				if(typeof str == 'number') {
+					var str = String(str)
+					for(var i = 0; i < str.length; i++) {
+						fn(i)
+					}
+					function fn(i) {
+						if(str[i] == '.') {
+							j.push(i)
+						}
+					}
+					console.log(j)
+					var obj = str.slice(0, j[0]);
+					return obj
+				}
+			}
+			console.log(paseint(asn))
+		</script>
+	</body>
+
+</html>
